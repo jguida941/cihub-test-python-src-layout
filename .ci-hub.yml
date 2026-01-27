@@ -3,8 +3,9 @@ repo:
   owner: jguida941
   name: cihub-test-python-src-layout
   language: python
-  default_branch: main
+  default_branch: audit/cihub-audit-2026-01-27
   dispatch_workflow: hub-ci.yml
+  hub_workflow_ref: audit/owasp-no-key
 python:
   version: '3.12'
   tools:
@@ -46,7 +47,6 @@ thresholds:
   mutation_score_min: 70
   max_critical_vulns: 0
   max_high_vulns: 0
-  max_pip_audit_vulns: 1
 reports:
   retention_days: 30
 language: python
